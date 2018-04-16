@@ -23,11 +23,7 @@ import {
   encapsulation: ViewEncapsulation.Emulated // None, Native
 })
 export class ServerElementComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-  @Input('srvElement') element: {
-    type: string;
-    name: string;
-    content: string;
-  };
+  @Input('srvElement') element: {type: string; name: string; content: string; };
   @Input() name: string;
   @ViewChild('header') header: ElementRef;
   @ContentChild('contentParagraph') paragraph: ElementRef;
